@@ -1,0 +1,29 @@
+<div id="contentArticle">
+  <div id="content">
+    <h1 id="title"><center>! 生日快乐 !</center></h1>
+    <article style="
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 75%;
+      height: 35%;
+      transform: translate(-50%, -50%);
+    ">
+      今天，是你正式成为十五岁的少年啦！恭喜你老了一岁！(bushi)<br />
+      然后呢，压力也越来越大了，祝你不被生活工作击垮、越活越出色！！！
+    </article>
+    <div style="
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 80%;
+    height: 55%;
+    transform: translateX(-50%);
+
+    background-image: url('/assets/article/TianLuo-Birthday/IMG20230117093043.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    "></div>
+  </div>
+</div>

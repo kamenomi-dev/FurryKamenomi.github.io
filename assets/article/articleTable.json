@@ -1,0 +1,20 @@
+{
+  "lists": [
+    {
+      "title": "404",
+      "toFile": "2023-01-06-000A",
+      "isInternal": true,
+      "internalConf": {
+        "httpcode": 404
+      }
+    },
+    {
+      "title": "Tianluo-HappyBirthday",
+      "toFile": "./TianLuo-Birthday/Tianluo-HappyBirthday",
+      "isInternal": false,
+      "internalConf": {
+        "httpcode": 0
+      }
+    }
+  ]
+}

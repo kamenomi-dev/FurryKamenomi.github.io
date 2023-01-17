@@ -1,0 +1,24 @@
+:root {
+  --Orz-CustomFonts: 'codicon';
+  --Orz-Global-Error: #F88070;
+  --Orz-Global-ErrorIcon: #F8807066;
+  --Orz-Global-Forced-FrameColor: #007FD4;
+  --Orz-Global-Forced-BackgroundColor: #04395E;
+  --Orz-Global-Selected-Background: #37373D;
+  --Orz-TextIcon-Default: #CCCCCC;
+  --Orz-TextIcon-unForced: #8E8E8E;
+  --Orz-Editor-BackgroundColor: #252526;
+  --Orz-Editor-input-background: #3c3c3c;
+  --Orz-TopBar-BackgroundColor: #3C3C3C;
+  --Orz-TopBar-BackgroundColor-unForced: #323233;
+  --Orz-Topbar-Item-BackgroundColor: #454646;
+  --Orz-ActivityBar-TextIcon: #FFFFFF;
+  --Orz-ActivityBar-TextIcon-unForced: #FFFFFF66;
+  --Orz-ActivityBar-BackgroundColor: #333333;
+  --Orz-ActivityBar-Content-BackgroundColor: #252526;
+  --Orz-ActivityBar-Content-TitleColor: #BBBBBB;
+  --Orz-Content-BackgroundColor: #1E1E1E;
+  --Orz-StatusBar-TextIcon: #FFFFFF;
+  --Orz-StatusBar-Free-BackgroundColor: #007ACC;
+  --Orz-StatusBar-Running-BackgroundColor: #CC6633;
+}

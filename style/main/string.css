@@ -1,0 +1,15 @@
+#Orz-ActivityBar > .Actions-Tab > .Action-Item #Tab-Article:before {
+  content: var(--Actions-Tab-ItemTab-Article);
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item #Tab-Search:before {
+  content: var(--Actions-Tab-ItemTab-Search);
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item #Tab-Archive:before {
+  content: var(--Actions-Tab-ItemTab-Archive);
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item #Tab-Tag:before {
+  content: var(--Actions-Tab-ItemTab-Tag);
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item #Tab-Secret:before {
+  content: var(--Actions-Tab-ItemTab-Secret);
+}

@@ -1,0 +1,253 @@
+:root {
+  --Orz-CustomFonts: 'codicon';
+  --Orz-Global-Error: #F88070;
+  --Orz-Global-ErrorIcon: #F8807066;
+  --Orz-Global-Forced-FrameColor: #007FD4;
+  --Orz-Global-Forced-BackgroundColor: #04395E;
+  --Orz-Global-Selected-Background: #37373D;
+  --Orz-TextIcon-Default: #CCCCCC;
+  --Orz-TextIcon-unForced: #8E8E8E;
+  --Orz-Editor-BackgroundColor: #252526;
+  --Orz-Editor-input-background: #3c3c3c;
+  --Orz-TopBar-BackgroundColor: #3C3C3C;
+  --Orz-TopBar-BackgroundColor-unForced: #323233;
+  --Orz-Topbar-Item-BackgroundColor: #454646;
+  --Orz-ActivityBar-TextIcon: #FFFFFF;
+  --Orz-ActivityBar-TextIcon-unForced: #FFFFFF66;
+  --Orz-ActivityBar-BackgroundColor: #333333;
+  --Orz-ActivityBar-Content-BackgroundColor: #252526;
+  --Orz-ActivityBar-Content-TitleColor: #BBBBBB;
+  --Orz-Content-BackgroundColor: #1E1E1E;
+  --Orz-StatusBar-TextIcon: #FFFFFF;
+  --Orz-StatusBar-Free-BackgroundColor: #007ACC;
+  --Orz-StatusBar-Running-BackgroundColor: #CC6633;
+}
+@font-face {
+  font-family: 'codicon';
+  src: url('//www.furrycreakler.cn/style/main/fonts/codicon.ttf');
+}
+* {
+  font-family: var(--Orz-CustomFonts);
+  color: var(--Orz-TextIcon-Default);
+}
+/* control */
+/* base */
+.Orz-C {
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#Orz-Editor {
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 25;
+  top: 30px;
+  left: 50%;
+  width: 600px;
+  height: 61px;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 0px 8px 2px;
+  background-color: var(--Orz-Editor-BackgroundColor);
+  border-radius: 4px;
+  font-size: 13.5px;
+  color: var(--Orz-TextIcon-Default);
+}
+#Orz-Editor > #Editor-Content-Title {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 35px;
+}
+#Orz-Editor #Editor-Content-Status {
+  position: absolute;
+  top: 26px;
+  left: 6px;
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+  font-size: medium;
+  text-align: center;
+  line-height: 27px;
+  justify-content: center;
+}
+#Orz-Editor > input {
+  outline: none;
+  position: absolute;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-size: inherit;
+  vertical-align: middle;
+  justify-content: center;
+  padding-left: 25px;
+  top: 26px;
+  left: 6px;
+  right: 6px;
+  bottom: 8px;
+  background-color: var(--Orz-Editor-input-background);
+}
+#Orz-Editor > input:focus {
+  border-color: var(--Orz-Global-Forced-FrameColor);
+}
+#Orz-Topbar {
+  width: 100vw;
+  height: 30px;
+  background-color: var(--Orz-TopBar-BackgroundColor);
+}
+#Orz-Topbar > .Orz-LogoFrame {
+  position: inherit;
+  width: 48px;
+  height: inherit;
+}
+#Orz-Topbar > .Orz-LogoFrame :first-child {
+  width: 16px !important;
+  height: 64px !important;
+}
+#Orz-Topbar .Orz-Item {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  position: inherit;
+  left: 48px;
+  width: 50%;
+  height: 100%;
+  font-size: 13px;
+  line-height: 1.4em;
+  white-space: nowrap;
+  -webkit-app-region: no-drag;
+}
+#Orz-Topbar .Orz-Item > .Item-Button {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#Orz-Topbar .Orz-Item > .Item-Button:focus {
+  border-color: var(--Orz-Global-Forced-FrameColor);
+  background-color: var(--Orz-Topbar-Item-BackgroundColor);
+}
+#Orz-Topbar .Orz-Item > .Item-Button > .Item-Button-Title {
+  color: inherit;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+#Orz-ActivityBar {
+  top: 30px;
+  width: 48px;
+  bottom: 22px;
+  background-color: var(--Orz-ActivityBar-BackgroundColor);
+}
+#Orz-ActivityBar > #Actions-Tab-Highlight {
+  top: 0%;
+  width: 2px;
+  height: 48px;
+  background-color: var(--Orz-TextIcon-Default);
+}
+#Orz-ActivityBar > .Actions-Tab {
+  display: block;
+  margin: 0;
+  padding-left: 0px;
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item {
+  color: var(--Orz-TextIcon-unForced);
+  list-style: none;
+}
+#Orz-ActivityBar > .Actions-Tab > .Action-Item .Action-Label {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-right: 0;
+  color: inherit;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+#Orz-ActivityBar-Content {
+  top: 30px;
+  left: 48px;
+  width: 25%;
+  bottom: 22px;
+  background-color: var(--Orz-ActivityBar-Content-BackgroundColor);
+}
+#Orz-ActivityBar-Content > .Content-Title {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--Orz-ActivityBar-Content-TitleColor);
+}
+#Orz-ActivityBar-Content > .Content-Title > .Title-Label {
+  display: block;
+  cursor: default;
+  margin: 0;
+  overflow: inherit;
+  font-size: 11px;
+  line-height: 35px;
+  white-space: nowrap;
+  padding-left: 12px;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+#Orz-ActivityBar-Content > .Content-Title > .Title-Actions {
+  flex: 1;
+  line-height: 35px;
+  white-space: nowrap;
+  padding-left: 5px;
+}
+#Orz-DContent-DetectLine {
+  cursor: col-resize;
+  z-index: 1314;
+  top: 30px;
+  width: 6px;
+  bottom: 22px;
+  background-color: #FFFFFF01;
+}
+#Orz-Content {
+  top: 30px;
+  right: 0px;
+  bottom: 22px;
+  background-color: var(--Orz-Content-BackgroundColor);
+}
+#Orz-Content > #Content-HTML {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#Orz-StatusBar {
+  top: unset;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  bottom: 0;
+  background-color: var(--Orz-StatusBar-Free-BackgroundColor);
+}
+/* mainRescoure -- Readonly */
+.Orz-Logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url('/resource/favicon/main.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+}
